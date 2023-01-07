@@ -3,12 +3,12 @@ import AboutSection from "../components/AboutSection";
 import FaqSection from "../components/FaqSection";
 import ServiceSection from "../components/ServicesSection";
 
-const AboutUs = () =>{
-    return(
+const AboutUs = () => {
+    return (
         <div>
-        <AboutSection />
-        <ServiceSection />
-        <FaqSection />
+            <AboutSection />
+            <ServiceSection />
+            <FaqSection />
         </div>
 
     )
