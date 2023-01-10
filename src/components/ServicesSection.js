@@ -4,8 +4,7 @@ import money from '../img/money.svg'
 import teamwork from '../img/teamwork.svg'
 import diaphragm from '../img/diaphragm.svg'
 import home2 from '../img/home2.png'
-import { About,Description,Image } from "../style/style";
-import styled from "styled-components";
+import { Services,Description,Image,Cards,Card } from "../style/style";
 
 
 const ServiceSection = () =>{
@@ -51,33 +50,5 @@ const ServiceSection = () =>{
     )
 }
 
-const Services = styled(About)`
-  h2 {
-    padding-bottom: 5rem;
-  }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
-`;
-const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-  }
-`;
-const Card = styled.div`
-  flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    h3 {
-      margin-left: 1rem;
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
-  }
-`;
+
 export default ServiceSection

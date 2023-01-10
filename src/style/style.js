@@ -44,3 +44,108 @@ export const Hide = styled.div`
     overflow: hidden;
 `
 
+export const Services = styled(About)`
+  h2 {
+    padding-bottom: 5rem;
+  }
+  p {
+    width: 70%;
+    padding: 2rem 0rem 4rem 0rem;
+  }
+`;
+export const Cards = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
+`;
+export const Card = styled.div`
+  flex-basis: 20rem;
+  .icon {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin-left: 1rem;
+      background: white;
+      color: black;
+      padding: 1rem;
+    }
+  }
+`;
+
+
+export const Faq = styled(About)`
+    display:block;
+    span{
+        display:block;
+    }
+    h2{
+        padding-bottom: 2rem;
+        font-weight: lighter;
+    }
+    .faq-line{
+        background: #cccccc;
+        height: 0.2rem;
+        margin: 2rem 0rem;
+        width:100%;
+    }
+    .question{
+        padding:3rem 0rem;
+        cursor:pointer;
+    }
+    .answer{
+        padding:2rem 0rem;
+        p{
+            padding: 1rem 0rem;
+        }
+    }
+`
+
+export const NavStyled = styled.nav`
+    min-height: 10vh;
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 10rem;
+    background-color:#282828;
+    a{
+        color:white;
+        text-decoration: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    li{
+        padding-left: 10rem;
+        position: relative;
+    }
+    #logo{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+`
+
+export const Work = styled.div`
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 10rem;
+  h2{
+    padding: 1rem 0rem;
+  }
+`
+export const Movie = styled.div`
+  padding-bottom: 10rem;
+  .line{
+    height: 0.5rem;
+    background: #cccccc;
+    margin-bottom: 3rem;
+  }
+  img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+`
