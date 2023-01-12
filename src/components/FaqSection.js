@@ -46,7 +46,6 @@ const FaqSection = () => {
                     </p>
                 </div>
             </div>
-
         </Faq>
     )
 }

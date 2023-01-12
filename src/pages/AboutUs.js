@@ -10,7 +10,6 @@ const AboutUs = () => {
             <ServiceSection />
             <FaqSection />
         </div>
-
     )
 }
 
