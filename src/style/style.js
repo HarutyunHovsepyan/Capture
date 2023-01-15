@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
 
 // About Component
-
 
 export const About = styled.div`
 min-height: 90vh;
@@ -116,6 +117,7 @@ export const NavStyled = styled.nav`
     display:flex;
     margin: auto;
     justify-content: space-between;
+    z-index: 1;
     align-items:center;
     padding: 1rem 10rem;
     background-color:#282828;
@@ -139,7 +141,7 @@ export const NavStyled = styled.nav`
 
 // OurWork Component
 
-export const Work = styled.div`
+export const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -154,7 +156,7 @@ export const Movie = styled.div`
   padding-bottom: 10rem;
   .line{
     height: 0.5rem;
-    background: #cccccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img{
@@ -164,10 +166,28 @@ export const Movie = styled.div`
   }
 `
 
+export const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: #fffebf;
+  z-index: 2;
+`;
+export const Frame2 = styled(Frame1)`
+  background: #ff8efb;
+`;
+export const Frame3 = styled(Frame1)`
+  background: #8ed2ff;
+`;
+export const Frame4 = styled(Frame1)`
+  background: #8effa0;
+`;
 // MovieDetail Component
 
 
-export const Detail = styled.div`
+export const Detail = styled(motion.div)`
   color:white;
 `
 export const HeadLine = styled.div`
@@ -218,4 +238,12 @@ export const ImageDisplay = styled.div`
     height: 100vh;
     object-fit: cover;
   }
+`
+
+// SVG style
+
+export const WaveSvg = styled.svg`
+  position: absolute;
+  left:0;
+  z-index:1;
 `

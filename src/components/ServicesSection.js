@@ -4,10 +4,13 @@ import money from '../img/money.svg'
 import teamwork from '../img/teamwork.svg'
 import diaphragm from '../img/diaphragm.svg'
 import home2 from '../img/home2.png'
+import { motion } from "framer-motion";
 import { Services,Description,Image,Cards,Card } from "../style/style";
+import { imageAnim } from "../pages/animation";
 
 
 const ServiceSection = () =>{
+
     return(
         <Services>
             <Description>
@@ -44,7 +47,7 @@ const ServiceSection = () =>{
                 </Cards>
             </Description>
             <Image>
-                <img src={home2} alt="" />
+                <motion.img src={home2} alt="" variants={imageAnim} animate='show' initial='hidden' />
             </Image>
         </Services>
     )

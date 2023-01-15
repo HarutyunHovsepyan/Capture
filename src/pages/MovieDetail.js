@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { MovieState } from '../movieState'
 import { Detail, HeadLine, Awards, ImageDisplay } from "../style/style";
 import Award from "./Award";
+import { pageAnimation } from "./animation";
 
 const MovieDetail = () => {
     const location = useLocation()
@@ -17,7 +18,7 @@ const MovieDetail = () => {
     return (
         <>
             {movie && (
-                <Detail>
+                <Detail variants={pageAnimation} initial='hidden' animate='show'>
                     <HeadLine>
                         <h2>{movie.title}</h2>
                         <img src={movie.mainImg} alt="" />
