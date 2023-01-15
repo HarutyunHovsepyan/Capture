@@ -135,11 +135,39 @@ export const NavStyled = styled.nav`
         padding-left: 10rem;
         position: relative;
     }
+    @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      display: inline-block;
+      margin: 1rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+  }
     #logo{
         font-size: 1.5rem;
         font-weight: lighter;
     }
 `
+
+export const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 60%;
+  @media (max-width: 1300px) {
+    left: 0%;
+  }
+`;
 
 // OurWork Component
 
@@ -194,11 +222,18 @@ export const ContactStyle = styled(motion.div)`
     color:#353553;
     background-color: #fff;
     min-height: 90vh;
+    @media (max-width: 1500px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `
 
 export const Title = styled.div`
   margin-bottom: 4rem;
   color:black;
+  @media (max-width: 1500px) {
+    margin-top: 5rem;
+  }
 `
 
 export const HideContact = styled.div`
@@ -248,6 +283,10 @@ export const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1500px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `
 
 // Award Component
