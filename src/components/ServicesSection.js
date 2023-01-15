@@ -8,9 +8,7 @@ import { motion } from "framer-motion";
 import { Services,Description,Image,Cards,Card } from "../style/style";
 import { imageAnim } from "../pages/animation";
 
-
 const ServiceSection = () =>{
-
     return(
         <Services>
             <Description>

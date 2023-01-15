@@ -117,10 +117,12 @@ export const NavStyled = styled.nav`
     display:flex;
     margin: auto;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10;
     align-items:center;
     padding: 1rem 10rem;
     background-color:#282828;
+    position:sticky;
+    top:0;
     a{
         color:white;
         text-decoration: none;
@@ -184,6 +186,40 @@ export const Frame3 = styled(Frame1)`
 export const Frame4 = styled(Frame1)`
   background: #8effa0;
 `;
+
+// Contact Us
+
+export const ContactStyle = styled(motion.div)`
+    padding: 5rem 10rem;
+    color:#353553;
+    background-color: #fff;
+    min-height: 90vh;
+`
+
+export const Title = styled.div`
+  margin-bottom: 4rem;
+  color:black;
+`
+
+export const HideContact = styled.div`
+  overflow: hidden;
+`
+
+export const  Circle = styled.div`
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: #353535;
+`
+
+export const Social = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  h2{
+    margin:2rem;
+  }
+  `
+
 // MovieDetail Component
 
 
